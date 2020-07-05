@@ -1,173 +1,25 @@
 /* This is an example of using Sass, otherwise plain CSS works too*/
 @import '_variables.scss';
 @import '_mix-ins.scss';
-@import '_user-buttons.scss';
-@import '_login-module.scss';
-@import '_destination-area.scss';
-@import '_trip-card.scss';
-@import '_agent-table.scss';
-@import '_request-form.scss';
-@import 'agent-search-page.scss';
-
-
-
-
+@import '_nav.scss';
 
 * {
-  box-sizing: border-box;
   margin: 0;
-  padding: 0;
   border: none;
-  background: none;
+  box-sizing: border-box;
+  padding: 0;
 }
 
-body,
-html {
-  @include widthNheight(100%, 100%)
+.icon {
+  width: 50px;
 }
 
-body {
-  font-family: $main-font;
+html,
+#root {
+  width: 100%;
+  height: 100%;
 }
 
-nav {
-  @include flexNdirection(row);
-  @include widthNheight(100%, 150px);
-  align-items: center;
-  justify-content: space-between;
-  padding: 1%;
-  background: linear-gradient(90deg,$blue 40%, $purple 70%);
-
-  & header {
-    @include flexNdirection(column);
-    @extend .forty-five;
-    width: 45%;
-    padding-left: 1%;
-    border: solid black 1px;
-    background-color: $grey;
-    font-family: $fancy-font;
-
-  }
-
-  & button {
-    margin: 5px;
-  }
-
-  & .date {
-    font-family: $main-font;
-    font-size: 1.5rem;
-  }
-
-  & section {
-    @include flexNdirection(row);
-    justify-content: space-between;
-    padding-right: 3%;
-  }
-
-  & p {
-    margin-left: 5%;
-    font-size: 1.15rem;
-    text-transform: capitalize;
-  }
-
-  & h1 {
-    display: flex;
-    align-items: center;
-    font-size: 3.5rem;
-  }
-
-  & img {
-    width: 80px;
-  }
-
-}
-
-main {
-  @include flexNdirection(column);
-  align-items: center;
-  background-color: $grey;
-}
-
-button {
-  cursor: pointer;
-}
-
-button:disabled {
-  cursor: initial;
-  opacity: .5;
-}
-
-footer {
-  background-color: $purple;
-
-  article {
-    width: 50%;
-    padding: 2% 1%;
-    color: $white;
-    @extend .forty-five;
-    font-family: $article-font;
-    font-size: 1rem;
-    font-style: italic;
-  }
-}
-
-p,
-img {
-  pointer-events: none;
-}
-
-@media (max-width: 1000px) {
-  nav {
-
-    & header {
-      @include flexNdirection(column);
-      @include widthNheight(350px, 120px);
-
-      & p {
-        display: none;
-      }
-
-      & section {
-        @include flexNdirection(column);
-        align-items: center;
-        padding: 3%
-      }
-    }
-  }
-}
-
-@media (max-width: 750px) {
-  nav {
-    @include flexNdirection(column);
-    height: 26%;
-
-    & header {
-      @include flexNdirection(row);
-      @include widthNheight(90%, 70px);
-      justify-content: center;
-
-      & section {
-        @include flexNdirection(row);
-        justify-content: space-between;
-
-        & h1 {
-          width: 200px;
-          padding: 3%;
-          font-size: 2rem;
-        }
-
-        & img {
-          width: 50px;
-        }
-      }
-    }
-
-    & .user-buttons {
-      width: 100%;
-
-      & button {
-        justify-content: center;
-      }
-    }
-  }
+#root {
+  display: flex;
 }

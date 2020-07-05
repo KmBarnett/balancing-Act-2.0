@@ -7,15 +7,3 @@
   width: $width;
   height: $height;
 }
-
-@mixin positionAbsolute($top, $right, $bottom, $left) {
-  position: absolute;
-  top: $top;
-  right: $right;
-  bottom: $bottom;
-  left: $left;
-}
-
-.forty-five {
-  border-radius: 45px;
-}
