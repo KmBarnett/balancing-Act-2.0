@@ -2,23 +2,29 @@ export const everyPage = {
   header: `<h1>Balancing Act</h1>`,
   nav: `
   <nav>
-    <button id="home-js" type="button" name="button">
-      <img class='icon' src='./images/icons/elephant.svg' alt="Home icon">
+    <button class='home-icon' id="home-icon-js" type="button" name="button">
+      <img class='icon home-icon' src='./images/icons/elephant.svg' alt="Home icon">
     </button>
-    <fieldset id='nav-selection'>
-      <label for="dashboard-icon-js">
-        <input id='dashboard-icon-js' type="radio" name="nav" value="dashboard"/>
-        <img class='icon' src='./images/icons/dashboard.svg' alt="dashboard icon">
-      </label>
-      <label for="wallet-icon-js">
+    <section class='nav-feildset' id='nav-selection-js'>
+      <section>
+        <input checked id='dashboard-icon-js' type="radio" name="nav" value="dashboard"/>
+        <label for="dashboard-icon-js">
+          <img class='icon' src='./images/icons/dashboard.svg' alt="dashboard icon">
+        </label>
+      </section>
+      <section>
         <input id='wallet-icon-js' type="radio" name="nav" value="wallet"/>
-        <img class='icon' src='./../images/icons/credit-card.svg' alt=" wallet icon">
-      </label>
-      <label for="profile-icon-js">
+        <label for="wallet-icon-js">
+          <img class='icon' src='./../images/icons/credit-card.svg' alt=" wallet icon">
+        </label>
+      </section>
+      <section>
         <input id='profile-icon-js' type="radio" name="nav" value="profile"/>
-        <img class='icon' src='./../images/icons/profile.svg' alt="profile icon">
-      </label>
-    </fieldset>
+        <label for="profile-icon-js">
+          <img class='icon' src='./../images/icons/profile.svg' alt="profile icon">
+        </label>
+      </section>
+    </section>
   </nav>
   `
 }

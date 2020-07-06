@@ -1,3 +1,41 @@
 nav {
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-wrap: wrap;
+  width: 75px;
+  padding: 3% 1%;
+
+  & .home-icon {
+    align-self: flex-start;
+    background: none;
+    @include widthNheight(60px, 60px)
+  }
+
+  & .nav-feildset {
+    align-self:baseline;
+    display: flex;
+    height: 25%;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & [type="radio"] {
+      display: none
+    }
+
+    & label {
+      display: block;
+      padding: .15rem;
+      border-left: solid rgba(0, 0, 0, 0) 3px;
+
+      &:hover {
+        border-left: solid $liner-start 3px;
+      }
+    }
+
+    & [type="radio"]:checked + label {
+      border-left: solid $teal 3px;
+    }
+  }
 }
