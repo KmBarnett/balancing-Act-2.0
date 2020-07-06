@@ -1,4 +1,4 @@
-# MF Trips
+# Balancing Act 2.0
 
 ## Screen Grabs of Finished Product
 
