@@ -17,13 +17,13 @@ export const everyPage = {
       <section>
         <input id='wallet-icon-js' type="radio" name="nav" value="wallet"/>
         <label data-tooltip='Navigate To Transaction Details' for="wallet-icon-js">
-          <img class='icon' src='./../images/icons/credit-card.svg' alt=" wallet icon">
+          <img class='icon' src='./images/icons/credit-card.svg' alt=" wallet icon">
         </label>
       </section>
       <section>
         <input id='profile-icon-js' type="radio" name="nav" value="profile" />
         <label data-tooltip='Navigate To Profile' for="profile-icon-js">
-          <img class='icon' src='./../images/icons/profile.svg' alt="profile icon">
+          <img class='icon' src='./images/icons/profile.svg' alt="profile icon">
         </label>
       </section>
     </section>
@@ -112,9 +112,9 @@ export const dashboard = {
   account: (account) => {
     const { id, type, company } = account
     const accountTypes = {
-      credit: '../images/icons/credit-card.svg',
-      savings: '../images/icons/savings.svg',
-      checking: '../images/icons/checking.svg'
+      credit: './images/icons/credit-card.svg',
+      savings: './images/icons/savings.svg',
+      checking: './images/icons/checking.svg'
     }
     return `
     <section id="${id}" class='account-details account-details-js'>
