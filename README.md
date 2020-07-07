@@ -1,7 +1,7 @@
 # Balancing Act 2.0
 
 ## Screen Grabs of Finished Product
-
+![alt text](https://user-images.githubusercontent.com/56409751/86857099-fa884880-c07a-11ea-8ec0-dca83b7977ec.png "Balancing act screen shot")
 
 ## General info
 
