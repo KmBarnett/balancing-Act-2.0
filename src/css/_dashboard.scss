@@ -6,11 +6,12 @@
   padding: 1%;
   min-width: 210px;
 
-  & .close-icon {
+  .close-icon {
     @include widthNheight(.75rem, .75rem);
     background: none
   }
 }
+
 
 .page {
   display: flex;
@@ -22,12 +23,12 @@
   flex-wrap: wrap;
 
   & .column {
+    @include flexNdirection(column);
     width: 47.5%;
     min-width: 340px;
-    height: 81.05vh;
+    height: 100%;
     padding: 0 1%;
     flex-grow: 1;
-    margin-bottom: 50px;
   }
 }
 
@@ -48,25 +49,53 @@
   }
 }
 
+.accounts-section {
+  @include flexNdirection(column);
+  flex-grow: 1;
+  height: 425px;
+}
+
 .accounts-container {
-  margin: 1% 0;
-  height: 22.005rem;
+  margin: 2% 0;
+  padding: 1rem 0 0;
+  height: 22.75rem;
+  flex-shrink: 1;
+  flex-grow: 1;
   overflow-x: scroll;
+}
+
+.error {
+  color: $red;
+  font-size: .75rem;
 }
 
 .new-transaction-modle {
   @extend .tile;
-  @include widthNheight(50%, 65%);
+  @include widthNheight(50%, 80%);
   @include dropShadow(.35);
   position: absolute;
   padding: 1%;
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
-  background: $grey;
+  background: $dark-grey;
 
   & h3 {
     text-align: center;
+  }
+
+  & .close-modle-button{
+    @include widthNheight(2rem, 2rem)
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $teal;
+    background: $white;
+    border-radius: 100%;
+
+    & .close-icon {
+      @include widthNheight(1rem, 1rem)
+    }
   }
 
   & form {
@@ -93,8 +122,10 @@
       margin: 2% 0;
       font-size: 1.25rem;
 
-      & input {
+      & input,
+      & select {
         width: 100%;
+        text-transform: capitalize;
         padding: .15rem .5rem;
         border: 1px solid $teal;
         border-radius: 25px
@@ -121,6 +152,45 @@
     }
   }
 }
+.account-add-form {
+  @extend .tile;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2% 0;
+  flex-wrap: wrap;
+
+  & [data-tooltip]:before {
+    left: 70%;
+  }
+
+  & .add-input-container {
+    width: 65%;
+  }
+
+  & input,
+  & select {
+    border: $liner-start 3px solid;
+    padding: 0 3%;
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  & .account-add-icon {
+    @include widthNheight(1rem, 1rem)
+  }
+
+  & .account-add-button {
+    @include widthNheight(2rem, 2rem)
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $green;
+    background: none;
+    border-radius: 100%;
+  }
+}
+
 
 .account-details {
   @include flexNdirection(row)
@@ -129,9 +199,23 @@
   padding: 1.5rem .75rem;
   align-items: center;
   font-size: 1rem;
-  margin: 1.5% auto;
+  margin: 2.5% auto;
   height: 5rem;
   width: 90%;
+
+  & .account-close-button {
+    @include widthNheight(2rem, 2rem)
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $red;
+    background: none;
+    border-radius: 100%;
+  }
+
+  & .account-close-icon {
+    @include widthNheight(1rem, 1rem)
+  }
 
   & .icon {
     height: 2.5rem
