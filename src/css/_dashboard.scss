@@ -74,6 +74,7 @@
   @include widthNheight(50%, 80%);
   @include dropShadow(.35);
   position: absolute;
+  z-index: 20;
   padding: 1%;
   left: 50%;
   top: 50%;

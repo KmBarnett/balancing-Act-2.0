@@ -13,9 +13,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KmBarnett/travel-tracker.git"
+    "url": "git+https://github.com/KmBarnett/balancing-Act-2.0"
   },
-  "homepage": "https://kmbarnett.github.io/travel-tracker/",
+  "homepage": "https://kmbarnett.github.io/balancing-Act-2.0/",
   "author": "Turing School of Software and Design",
   "license": "MIT",
   "devDependencies": {
