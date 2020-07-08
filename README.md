@@ -7,6 +7,9 @@
 
 An application built with Jquery/JavaScript, Webpack, & Sass that is a redo of the first project I completed. It meant to act as a budget tracking application where a user can log and track their purchases. The goal of this application was to show how far I have come from the first days learning to code.
 
+[Original](https://github.com/KmBarnett/balancing-act)
+
+
 My Main Focus
 1. Responsive Design for smaller screens 
 * Tablets
