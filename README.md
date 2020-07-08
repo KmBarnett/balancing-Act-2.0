@@ -9,10 +9,10 @@ An application built with Jquery/JavaScript, Webpack, & Sass that is a redo of t
 
 My Main Focus
 1. Responsive Design for smaller screens 
-⋅⋅1. Tablets
-⋅⋅2. Large Phones
+* Tablets
+* Large Phones
 2. UX/UI 
-⋅⋅1. Intuitive 
+* Intuitive 
 3. Legacy Code Base
 
 ## Setup
@@ -30,5 +30,3 @@ Project is created with:
 * SCSS
 * JavaScript
 * jQuery
-* moment.js
-* _Testing Suite:_ Mocha & Chai
