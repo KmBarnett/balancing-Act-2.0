@@ -7,12 +7,13 @@
 
 An application built with Jquery/JavaScript, Webpack, & Sass that is a redo of the first project I completed. It meant to act as a budget tracking application where a user can log and track their purchases. The goal of this application was to show how far I have come from the first days learning to code.
 
-* Responsive Design for smaller screens 
-⋅⋅* Tablets
-⋅⋅* Large Phones
-* UX/UI 
-⋅⋅* Intuitive 
-* Legacy Code Base
+My Main Focus
+1. Responsive Design for smaller screens 
+⋅⋅1. Tablets
+⋅⋅2. Large Phones
+2. UX/UI 
+⋅⋅1. Intuitive 
+3. Legacy Code Base
 
 ## Setup
 
